@@ -301,6 +301,7 @@ globalkeys = awful.util.table.join(
             end
         end,
         {description = "go back", group = "client"}),
+    awful.key({ altkey,           }, "Tab",    function () awful.menu.clients({theme = { height = 25, width = 400 }}) end),
 
     -- Show/Hide Wibox
     awful.key({ modkey }, "b", function ()
