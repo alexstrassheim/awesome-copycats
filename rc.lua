@@ -577,11 +577,11 @@ awful.rules.rules = {
     },
 
     { rule = { class = "Termite" }, properties = { screen = 1, tag = screen[1].tags[1] } },
-    -- { rule = { class = "Firefox" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[1] } or { screen = 1, tag = screen[1].tags[2]} },
-    -- { rule = { name = "Pentest" }, properties = { screen = 1, tag = "[2:Pentest]" } }, -- Firefox with Name 'Pentest'
-    -- { rule = { class = "VirtualBox" }, properties = screen.count() == 2 and { screen = 2, tag = "[3:VM]" } or { screen = 1, tag = "[3:MEDIA]" } },
-    -- { rule = { class = "rdesktop" }, properties = screen.count() == 2 and { screen = 2, tag = "[4:WIN]" } or { screen = 1, tag = "[4:OTHER]" }},
-    -- { rule = { class = "burp-StartBurp" }, properties = screen.count() == 2 and { screen = 2, tag = "[2:BURP]" } or { screen = 1, tag = "[3:MEDIA]" }},
+    { rule = { class = "Firefox" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[1] } or { screen = 1, tag = screen[1].tags[2]} },
+    { rule = { name = "Pentest" }, properties = { screen = 1, tag = screen[1].tags[2] } }, -- Firefox with Name 'Pentest'
+    { rule = { class = "VirtualBox" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[3] } or { screen = 1, tag = screen[1].tags[3] } },
+    { rule = { class = "rdesktop" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[4] } or { screen = 1, tag = screen[1].tags[4] }},
+    { rule = { class = "burp-StartBurp" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[3] } or { screen = 1, tag = screen[1].tags[4] }},
 
 
     -- Titlebars
