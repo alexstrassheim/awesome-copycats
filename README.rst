@@ -29,5 +29,6 @@ Notes
 =====
 
 Additional software used: ::
+Additional software used: ::
 
     unclutter firefox scrot mpd mpc dmenu xsel light
