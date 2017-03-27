@@ -291,7 +291,7 @@ function theme.at_screen_connect(s)
     else
         tags = {
             names = { "[1:TERM]", "[2:WEB]", "[3:MEDIA]", "[4:OTHER]"},
-            layout = { layouts[2], layouts[1], layouts[2], layouts[3] }
+            layout = { layouts[2], layouts[2], layouts[2], layouts[3] }
         }
         tags[s] = awful.tag(tags.names, s, tags.layout)
     end
