@@ -214,7 +214,7 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     -- Take a screenshot
     -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("shutter -a") end),
+    -- awful.key({ altkey }, "p", function() os.execute("shutter -a") end),
     --
 
     -- Brightness control
@@ -582,7 +582,7 @@ awful.rules.rules = {
     { rule = { name = "Pentest" }, properties = { screen = 1, tag = screen[1].tags[2] } }, -- Firefox with Name 'Pentest'
     { rule = { class = "VirtualBox" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[3] } or { screen = 1, tag = screen[1].tags[3] } },
     { rule = { class = "rdesktop" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[4] } or { screen = 1, tag = screen[1].tags[4] }},
-    { rule = { class = "burp-StartBurp" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[3] } or { screen = 1, tag = screen[1].tags[4] }},
+    { rule = { class = "burp-StartBurp" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[4] }},
 
 
     -- Titlebars
