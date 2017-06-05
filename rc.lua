@@ -20,6 +20,9 @@ local lain          = require("lain")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+
+require("awful.remote")
+require("screenful")
 -- }}}
 
 -- {{{ Error handling
@@ -371,12 +374,12 @@ globalkeys = awful.util.table.join(
     -- ALSA volume control
     awful.key({ altkey }, "Up",
         function ()
-            os.execute(string.format("amixer set %s 1%%+", beautiful.volume.channel))
+            os.execute(string.format("amixer set %s 10%%+", beautiful.volume.channel))
             beautiful.volume.update()
         end),
     awful.key({ altkey }, "Down",
         function ()
-            os.execute(string.format("amixer set %s 1%%-", beautiful.volume.channel))
+            os.execute(string.format("amixer set %s 10%%-", beautiful.volume.channel))
             beautiful.volume.update()
         end),
     awful.key({ altkey }, "m",
@@ -390,11 +393,11 @@ globalkeys = awful.util.table.join(
             beautiful.volume.update()
         end),
 
-		awful.key({ altkey, "Control" }, "0",
-				function ()
-						os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))
-						beautiful.volume.update()
-				end),
+	awful.key({ altkey, "Control" }, "0",
+		function ()
+			os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))
+			beautiful.volume.update()
+    	end),
 
     -- MPD control
     awful.key({ altkey, "Control" }, "Up",
@@ -584,6 +587,7 @@ awful.rules.rules = {
     { rule = { class = "rdesktop" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[4] } or { screen = 1, tag = screen[1].tags[4] }},
     { rule = { class = "burp-StartBurp" }, properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[4] }},
 
+    { rule = { class = "Kodi" }, properties = { screen = 1, tag = screen[1].tags[3], fullscreen = true } },
 
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
