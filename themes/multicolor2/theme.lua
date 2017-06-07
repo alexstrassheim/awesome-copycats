@@ -281,10 +281,10 @@ function theme.at_screen_connect(s)
         tags = {
             settings = {
                 { names = { "[1:TERM]", "[2:Pentest]", "[3:FILE]", "[4:OFFICE]"},
-                layout = { layouts[4], layouts[3], layouts[3], layouts[2]}
+                layout = { layouts[2], layouts[2], layouts[2], layouts[2]}
                 },
-                { names = { "[1:WEB]", "[2:BURP]", "[3:VM]", "[4:WIN]" },
-                layout = {layouts[3], layouts[2], layouts[4], layouts[4]}
+                { names = { "[1:WEB]","[2:PDF]", "[3:BURP]", "[4:VM]", "[5:WIN]" },
+                layout = {layouts[2], layouts[2], layouts[2], layouts[2], layouts[2]}
                 }
             }
         }
