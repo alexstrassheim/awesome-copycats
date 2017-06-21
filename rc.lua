@@ -582,10 +582,11 @@ awful.rules.rules = {
 
     { rule = { class = "Termite" },         properties = { screen = 1, tag = screen[1].tags[1] }},
     { rule = { name = "Pentest" },          properties = { screen = 1, tag = screen[1].tags[2] }},
+    { rule = { class = "libreoffice" },     properties = { screen = 1, tag = screen[1].tags[4] }},
     { rule = { class = "Kodi" },            properties = { screen = 1, tag = screen[1].tags[3], fullscreen = true }},
     { rule = { class = "Firefox" },         properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[1] } or { screen = 1, tag = screen[1].tags[2] }},
-    { rule = { class = "Zathura" },         properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[4] }},
-    { rule = { name = "Recoll" },           properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[4] }},
+    { rule = { class = "Zathura" },         properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[3] }},
+    { rule = { name = "Recoll" },           properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or { screen = 1, tag = screen[1].tags[3] }},
     { rule = { class = "burp-StartBurp" },  properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[3] } or { screen = 1, tag = screen[1].tags[4] }},
     { rule = { class = "VirtualBox" },      properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[4] } or { screen = 1, tag = screen[1].tags[3] }},
     { rule = { class = "rdesktop" },        properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[5] } or { screen = 1, tag = screen[1].tags[4] }},
