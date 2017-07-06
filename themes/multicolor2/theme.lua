@@ -280,13 +280,21 @@ function theme.at_screen_connect(s)
     if screen.count() == 2 then
         tags = {
             settings = {
-                { names = { "[1:TERM]", "[2:Pentest]", "[3:FILE]", "[4:OFFICE]"},
-                layout = { layouts[2], layouts[2], layouts[2], layouts[2]}
+                { names = { "[1:TERM]", "[2:BURP]" },
+                layout = { layouts[2]}
                 },
-                { names = { "[1:WEB]","[2:PDF]", "[3:BURP]", "[4:VM]", "[5:WIN]" },
-                layout = {layouts[2], layouts[2], layouts[2], layouts[2], layouts[2]}
+                { names = { "[1:GENESIS]", "[2:OFFICE]", "[3:VM]", "[4:WEB]", "[5:PENTEST]" },
+                layout = {layouts[2], layouts[2], layouts[2], layouts[2]}
                 }
             }
+            -- settings = {
+            --     { names = { "[1:TERM]", "[2:Pentest]", "[3:FILE]", "[4:OFFICE]"},
+            --     layout = { layouts[2], layouts[2], layouts[2], layouts[2]}
+            --     },
+            --     { names = { "[1:WEB]","[2:PDF]", "[3:BURP]", "[4:VM]", "[5:WIN]" },
+            --     layout = {layouts[2], layouts[2], layouts[2], layouts[2], layouts[2]}
+            --     }
+            -- }
         }
         tags[s] = awful.tag(tags.settings[s.index].names, s, tags.settings[s.index].layout)
     else
