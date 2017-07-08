@@ -108,9 +108,9 @@ Blackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitm
 
 Additional software used: ::
 Additional software used: ::
+lackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitmaps enabled if running under Debian or Ubuntu_.
 
     unclutter firefox scrot mpd mpc dmenu xsel light
-=======
 Complements are provided by lain_ and freedesktop_.
 
 Fonts are Terminus_ (Multicolor, Powerarrow Darker), Tamzen_ (Copland), Roboto_ (Holo, Vertex) and Tamsyn_ (other ones).
@@ -121,7 +121,7 @@ Blackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitm
 
 Additional software used: ::
 
-    unclutter firefox scrot mpd mpc dmenu xsel
+    unclutter firefox scrot mpd mpc dmenu xsel light
 
 .. _BY-NC-SA: http://creativecommons.org/licenses/by-nc-sa/4.0
 .. _b0ab0d7: https://github.com/copycat-killer/awesome-copycats/tree/b0ab0d7837987be81b9195a36631df773113d491
@@ -143,4 +143,3 @@ Additional software used: ::
 .. _Ubuntu: https://wiki.ubuntu.com/Fonts#Enabling_Bitmapped_Fonts
 .. _FontAwesome: https://github.com/FortAwesome/Font-Awesome
 .. _branches: https://github.com/copycat-killer/awesome-copycats/branches
->>>>>>> upstream/master
