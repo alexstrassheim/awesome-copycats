@@ -21,9 +21,7 @@ If you still have to use branch 3.5.x, you can refer to the commit b0ab0d7_, but
 Description
 ===========
 
-A set of themes for the Awesome_ window manager, version >= 4.0.
-
-See branches_ for previous versions.
+A set of themes for the Awesome_ window manager.
 
 Features
 ========
@@ -100,10 +98,19 @@ With Git: ::
 Notes
 =====
 
+Complements are provided by lain_.
+
+Fonts are Terminus_ (Multicolor, Powerarrow Darker), Tamzen_ (Copland), Roboto_ (Holo, Vertex) and Tamsyn_ (other ones).
+
+Every theme has a colorscheme_.
+
+Blackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitmaps enabled if running under Debian or Ubuntu_.
+
+Additional software used: ::
 Additional software used: ::
 lackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitmaps enabled if running under Debian or Ubuntu_.
 
-=======
+    unclutter firefox scrot mpd mpc dmenu xsel light
 Complements are provided by lain_ and freedesktop_.
 
 Fonts are Terminus_ (Multicolor, Powerarrow Darker), Tamzen_ (Copland), Roboto_ (Holo, Vertex) and Tamsyn_ (other ones).
