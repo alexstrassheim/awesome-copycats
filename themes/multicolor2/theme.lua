@@ -280,11 +280,11 @@ function theme.at_screen_connect(s)
     if screen.count() == 2 then
         tags = {
             settings = {
-                { names = { "[1:TERM]", "[2:BURP]" },
-                layout = { layouts[2]}
-                },
                 { names = { "[1:GENESIS]", "[2:OFFICE]", "[3:VM]", "[4:WEB]", "[5:PENTEST]" },
                 layout = {layouts[2], layouts[2], layouts[2], layouts[2]}
+                },
+                { names = { "[1:TERM]", "[2:BURP]" },
+                layout = { layouts[2]}
                 }
             }
             -- settings = {
