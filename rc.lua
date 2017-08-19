@@ -68,7 +68,7 @@ local altkey       = "Mod1"
 local terminal     = "termite" or "xterm"
 local editor       = os.getenv("EDITOR") or "nano" or "vi"
 -- local gui_editor   = "gvim"
-local browser      = "firefox"
+local browser      = "chromium"
 local browserP     = "firefox --no-remote -P Pentest"
 
 awful.util.terminal = terminal
@@ -594,7 +594,7 @@ awful.rules.rules = {
     { rule = { name = "Recoll" },           properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[3] }},
     { rule = { class = "Zotero" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[2] }},
     { rule = { class = "VirtualBox" },      properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[3] } or {screen = 1, tag = screen[1].tags[3] }},
-    { rule = { class = "Firefox" },         properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[4] } or {screen = 1, tag = screen[1].tags[2] }},
+    { rule = { class = "Chromium" },        properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[4] } or {screen = 1, tag = screen[1].tags[2] }},
     { rule = { name = "Pentest" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[5] } or {screen = 1, tag = screen[1].tags[2] }},
 
 
