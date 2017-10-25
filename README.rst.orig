@@ -21,7 +21,17 @@ If you still have to use branch 3.5.x, you can refer to the commit b0ab0d7_, but
 Description
 ===========
 
+<<<<<<< HEAD
 A set of themes for the Awesome_ window manager.
+||||||| merged common ancestors
+A set of themes for the Awesome_ window manager, version >= 4.0.
+
+See branches_ for previous versions.
+=======
+A set of themes for the Awesome_ window manager, version 4.x.
+
+See branches_ for previous versions.
+>>>>>>> upstream/master
 
 Features
 ========
@@ -88,7 +98,61 @@ Gallery
 Installation
 ============
 
+<<<<<<< HEAD
 With Git: ::
+||||||| merged common ancestors
+.. code-block:: shell
+
+    $ git clone --recursive https://github.com/copycat-killer/awesome-copycats.git
+    $ mv -bv awesome-copycats/* ~/.config/awesome; rm -r awesome-copycats
+
+Usage
+=====
+
+The modular structure allows to
+
+* set variables
+* define startup processes
+* change keybindings and layouts
+* set client properties
+
+in ``rc.lua``, and
+
+* configure widgets
+* define wiboxes and screen settings
+
+in ``theme.lua``, so that you just need to change ``chosen_theme`` variable in ``rc.lua`` to preserve your preferences *and* switch the theme, instead of having N different ``rc.lua`` full of redundancy.
+
+Just do the following:
+
+.. code-block:: shell
+=======
+.. code-block:: shell
+
+    $ git clone --recursive https://github.com/lcpz/awesome-copycats.git
+    $ mv -bv awesome-copycats/* ~/.config/awesome; rm -rf awesome-copycats
+
+Usage
+=====
+
+The modular structure allows to
+
+* set variables
+* define startup processes
+* change keybindings and layouts
+* set client properties
+
+in ``rc.lua``, and
+
+* configure widgets
+* define wiboxes and screen settings
+
+in ``theme.lua``, so that you just need to change ``chosen_theme`` variable in ``rc.lua`` to preserve your preferences *and* switch the theme, instead of having N different ``rc.lua`` full of redundancy.
+
+Just do the following:
+
+.. code-block:: shell
+>>>>>>> upstream/master
 
     $ git clone --recursive https://github.com/alexstrassheim/awesome-copycats.git awesome
     $ cd ~/.config/awesome
