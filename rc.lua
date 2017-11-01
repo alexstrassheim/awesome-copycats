@@ -67,7 +67,7 @@ local altkey       = "Mod1"
 local terminal     = "termite" or "xterm"
 local editor       = os.getenv("EDITOR") or "nano" or "vi"
 -- local gui_editor   = "gvim"
-local browser      = "chromium"
+local browser      = "qutebrowser"
 local browserP     = "firefox --no-remote -P Pentest"
 
 awful.util.terminal = terminal
