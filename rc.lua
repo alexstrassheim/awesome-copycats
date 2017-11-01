@@ -632,7 +632,7 @@ awful.rules.rules = {
     { rule = { name = "Recoll" },           properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[3] }},
     { rule = { class = "Zotero" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[2] }},
     { rule = { class = "VirtualBox" },      properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[3] } or {screen = 1, tag = screen[1].tags[3] }},
-    { rule = { class = "Chromium" },        properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[4] } or {screen = 1, tag = screen[1].tags[2] }},
+    { rule = { class = "qutebrowser" },        properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[4] } or {screen = 1, tag = screen[1].tags[2] }},
     { rule = { name = "Pentest" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[5] } or {screen = 1, tag = screen[1].tags[2] }},
     { rule = { class = "Atom" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[1] }},
 
