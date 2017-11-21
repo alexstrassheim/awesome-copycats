@@ -15,7 +15,7 @@ local os    = { getenv = os.getenv, setlocale = os.setlocale }
 
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor2"
-theme.wallpaper                                 = theme.confdir .. "/wallpaper/arch2.png"
+theme.wallpaper                                 = theme.confdir .. "/wallpaper/pexels-photo.jpeg"
 -- theme.font                                      = "xos4 Terminus 12"
 theme.font                                      = "Monospace 12.5"
 theme.menu_bg_normal                            = "#000000"
