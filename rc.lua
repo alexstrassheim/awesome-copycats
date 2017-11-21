@@ -473,6 +473,8 @@ globalkeys = awful.util.table.join(
     -- User programs
     awful.key({ modkey }, "q", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
+    awful.key({ modkey }, "i", function () awful.spawn(browserP) end,
+              {description = "run browser", group = "launcher"}),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end,
               {description = "run gui editor", group = "launcher"}),
 
@@ -627,7 +629,7 @@ awful.rules.rules = {
     { rule = { class = "burp-StartBurp" },  properties = screen.count() == 2 and { screen = 2, tag = screen[2].tags[2] } or {screen = 1, tag = screen[1].tags[2] }},
 
     { rule = { class = "rdesktop" },        properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[1] } or {screen = 1, tag = screen[1].tags[4] }},
-    { rule = { class = "libreoffice" },     properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[2] }},
+    { rule = { class = "libreoffice-writer" },     properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[2] }, maximized = true },
     { rule = { class = "Zathura" },         properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[3] }},
     { rule = { name = "Recoll" },           properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[3] }},
     { rule = { class = "Zotero" },          properties = screen.count() == 2 and { screen = 1, tag = screen[1].tags[2] } or {screen = 1, tag = screen[1].tags[2] }},
