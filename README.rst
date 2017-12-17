@@ -89,6 +89,32 @@ Installation
 ============
 
 With Git: ::
+=======
+.. code-block:: shell
+
+    $ git clone --recursive https://github.com/lcpz/awesome-copycats.git
+    $ mv -bv awesome-copycats/* ~/.config/awesome; rm -rf awesome-copycats
+
+Usage
+=====
+
+The modular structure allows to
+
+* set variables
+* define startup processes
+* change keybindings and layouts
+* set client properties
+
+in ``rc.lua``, and
+
+* configure widgets
+* define wiboxes and screen settings
+
+in ``theme.lua``, so that you just need to change ``chosen_theme`` variable in ``rc.lua`` to preserve your preferences *and* switch the theme, instead of having file redundancy.
+
+Just do the following:
+
+.. code-block:: shell
 
     $ git clone --recursive https://github.com/alexstrassheim/awesome-copycats.git awesome
     $ cd ~/.config/awesome
@@ -97,6 +123,10 @@ With Git: ::
 
 Notes
 =====
+=======
+To customize a theme, head over to ``themes/$chosen_theme/theme.lua``.
+
+Otherwise, if you want to be synced with upstream, modify ``theme_path`` variable in ``rc.lua`` like this:
 
 Complements are provided by lain_.
 
@@ -119,7 +149,7 @@ Every theme has a colorscheme_.
 
 Blackburn and Dremora use Icons_, Vertex uses FontAwesome_: be sure to have bitmaps enabled if running under Debian or Ubuntu_.
 
-Additional software used: ::
+Additional default software used: ::
 
     unclutter firefox scrot mpd mpc dmenu xsel light
 
